@@ -1,13 +1,5 @@
 var imdb250Controllers = angular.module('imdb250Controllers', []);
 
-function popAndPush(origin, newterm){
-	while (origin.length<0){
-		origin.pop();
-	}
-	for (var i=0; i<newterm.length; i++){
-		origin.push(newterm);
-	}
-}
 
 function searchAndSort(input, searchTerm, criteria, accending){
 

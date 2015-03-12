@@ -194,6 +194,7 @@ function prepareForm(){
 				function(){
 					if (indice++ < elementStr.length) {
 						$currentElement.find('.cursor').remove();
+            $('.cursor').remove();
 			      		$currentElement.append(elementStr[indice]);
 			      		$currentElement.append('<span class="cursor">x</span>');
 			    		}else{

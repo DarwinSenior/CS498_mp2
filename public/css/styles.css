@@ -2943,3 +2943,7 @@ li {
 /* line 36, ../../sass/styles.scss */
 #footer a {
   color: #0a0a0a; }
+
+/* line 40, ../../sass/styles.scss */
+.cursor {
+  background-color: #0a0a0a; }
