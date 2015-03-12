@@ -226,6 +226,7 @@ $button-disabled-cursor: $cursor-default-value !default;
       &.alert     { @include button-style($bg:$alert-color, $bg-hover:$alert-button-bg-hover, $border-color:$alert-button-border-color); }
       &.warning   { @include button-style($bg:$warning-color, $bg-hover:$warning-button-bg-hover, $border-color:$warning-button-border-color); }
       &.info      { @include button-style($bg:$info-color, $bg-hover:$info-button-bg-hover, $border-color:$info-button-border-color); }
+      &.black     { @include button-style($bg:rgba($black, 0.9), $bg-hover:rgba($black, 0.7), $border-color:white); }
 
       &.large  { @include button-size($padding:$button-lrg); }
       &.small  { @include button-size($padding:$button-sml); }
@@ -244,6 +245,11 @@ $button-disabled-cursor: $cursor-default-value !default;
         &.alert { @include button-style($bg:$alert-color, $disabled:true, $bg-hover:$alert-button-bg-hover, $border-color:$alert-button-border-color); }
         &.warning { @include button-style($bg:$warning-color, $disabled:true, $bg-hover:$warning-button-bg-hover, $border-color:$warning-button-border-color); }
         &.info { @include button-style($bg:$info-color, $disabled:true, $bg-hover:$info-button-bg-hover, $border-color:$info-button-border-color); }
+      }
+      &.beef{
+        padding: 5px;
+        margin: 0;
+        font-size: 20px;
       }
     }
 

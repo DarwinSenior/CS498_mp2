@@ -1,0 +1,41 @@
+/* line 1, ../../sass/video.scss */
+.video {
+  margin: 1em auto;
+  display: block;
+  position: relative;
+  max-width: 100%; }
+  /* line 8, ../../sass/video.scss */
+  .video:hover + .video-control {
+    opacity: 0.8; }
+
+/* line 14, ../../sass/video.scss */
+.video-control {
+  font-size: 4em;
+  opacity: 0;
+  transition: opacity 0.3s;
+  color: #333;
+  text-align: center; }
+  /* line 22, ../../sass/video.scss */
+  .video-control:hover {
+    opacity: 1; }
+  /* line 26, ../../sass/video.scss */
+  .video-control:before, .video-control:after {
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    top: 50%;
+    left: 50%;
+    margin: -0.5em 0 0 -0.5em; }
+  /* line 36, ../../sass/video.scss */
+  .video-control:before {
+    content: '\25BA'; }
+  /* line 40, ../../sass/video.scss */
+  .video-control:after {
+    content: 'll';
+    font-weight: 700; }
+  /* line 46, ../../sass/video.scss */
+  .video-control.paused:after {
+    opacity: 0; }
+  /* line 52, ../../sass/video.scss */
+  .video-control.playing:before {
+    opacity: 0; }

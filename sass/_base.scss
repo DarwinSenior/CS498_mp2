@@ -12,3 +12,15 @@ h1 {
   color: $blue;
 }
 
+.shadow{
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.1), 3px 3px 5px rgba(0,0,0,0.1);
+}
+
+.hr{
+	border: 0;
+    height: 3px;
+    background-image: -webkit-linear-gradient(left, rgba($white,0), rgba($white,0.75), rgba($white,0)); 
+    background-image:    -moz-linear-gradient(left, rgba($white,0), rgba($white,0.75), rgba($white,0)); 
+    background-image:     -ms-linear-gradient(left, rgba($white,0), rgba($white,0.75), rgba($white,0)); 
+    background-image:      -o-linear-gradient(left, rgba($white,0), rgba($white,0.75), rgba($white,0)); 
+}

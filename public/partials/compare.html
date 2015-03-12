@@ -1,0 +1,69 @@
+<div class="view-frame">
+	<div class="row">
+		<div class="small-3 columns">
+			<a class="button" style="width: 100%" ng-click="random()">
+				Random
+			</a>
+		</div>
+		<div class="small-6 columns"></div>
+		<div class="small-3 columns">
+			<a class="button" style="width: 100%" ng-click="exchange()">
+				Switch
+			</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="columns small-6">
+			<div class="small-12-colums">
+				<h2>{{leftMovie.title}}</h2>
+			</div>
+			<div class="columns small-12">
+				rank : {{leftMovie.rated}}
+			</div>
+			<div class="columns small-6">
+				<a ng-href="#/detail/{{leftMovie.rank}}">
+					<img ng-src="{{imgSource(leftMovie.imdbID)}}" class="animation-fade">
+				</a>
+			</div>
+			<div class="columns small-6 view-frame">
+				<p>{{leftMovie.plot}}
+				</p>
+				<p>
+					Release : {{leftMovie.released}}
+				</p>
+				<p>
+					Runtime : {{leftMovie.runtime}}
+				</p>
+				<p>
+					Awards : {{leftMovie.awards}}
+				</p>
+			</div>
+		</div>
+		<div class="columns small-6">
+			<div class="small-12-colums">
+				<h2>{{rightMovie.title}}</h2>
+			</div>
+			<div class="columns small-12">
+				rank : {{rightMovie.rated}}
+			</div>
+			<div class="columns small-6">
+				<a ng-href="#/detail/{{rightMovie.rank}}">
+					<img ng-src="{{imgSource(rightMovie.imdbID)}}">
+				</a>
+			</div>
+			<div class="columns small-6">
+				<p>{{rightMovie.plot}}
+				</p>
+				<p>
+					Release : {{rightMovie.released}}
+				</p>
+				<p>
+					Runtime : {{rightMovie.runtime}}
+				</p>
+				<p>
+					Awards : {{rightMovie.awards}}
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

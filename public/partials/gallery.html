@@ -1,0 +1,18 @@
+<div>
+	<div class="row">
+		<div class="columns small-12">
+			<ul class="inline-list">
+				<li ng-repeat="genre in genres">
+					<a class="button" ng-click="genreChange(genre)">{{genre}}</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<ul class="small-block-grid-4">
+			<li ng-repeat="movie in selectedMovies track by $index"  class="animation-fade view-frame">
+				<a ng-href="#/detail/{{movie.rank}}"><img ng-src="{{imgSource(movie.imdbID)}}"></a>
+			</li>
+		</ul>
+	</div>
+</div>

@@ -205,7 +205,7 @@ $topbar-dropdown-arrows: true !default; //Set false to remove the \00bb >> text 
 
         h1, h2, h3, h4, p, span {
           line-height: $topbar-height;
-          font-size: $topbar-title-font-size;
+          font-size: $topbar-title-font-size*2;
           margin: 0;
           a {
             font-weight: $topbar-title-weight;
@@ -226,7 +226,7 @@ $topbar-dropdown-arrows: true !default; //Set false to remove the \00bb >> text 
         a {
           color: $topbar-link-color;
           text-transform: $topbar-menu-link-transform;
-          font-size: $topbar-menu-link-font-size;
+          font-size: $topbar-menu-link-font-size*2;
           font-weight: $topbar-menu-link-weight;
           position: relative;
           display: block;

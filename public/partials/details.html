@@ -1,0 +1,43 @@
+<div>
+	<div class="row">
+		<div class="small-1 columns">
+			<a class="button" ng-click="before()">
+				<i class="fa fa-arrow-left fa-2x"></i>
+			</a>
+		</div>
+		<div class="small-10 columns"></div>
+		<div class="small-1 columns">
+			<a class="button" ng-click="next()">
+				<i class="fa fa-arrow-right fa-2x"></i>
+			</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-12-colums">
+			<h2>{{currentMovie.title}}</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="columns small-12">
+			rank : {{currentMovie.rated}}
+		</div>
+	</div>
+	<div class="row">
+		<div class="columns small-6">
+			<img ng-src="{{imgSource(currentMovie.imdbID)}}">
+		</div>
+		<div class="columns small-6">
+			<p>{{currentMovie.plot}}
+			</p>
+			<p>
+				Release : {{currentMovie.released}}
+			</p>
+			<p>
+				Runtime : {{currentMovie.runtime}}
+			</p>
+			<p>
+				Awards : {{currentMovie.awards}}
+			</p>
+		</div>
+	</div>
+</div>

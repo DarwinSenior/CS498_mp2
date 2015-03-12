@@ -1,0 +1,56 @@
+.video {
+  margin: 1em auto;
+  display: block;
+  position: relative;
+  max-width: 100%;
+  
+  &:hover {
+   + .video-control {
+     opacity: 0.8;
+   }
+  }
+}
+
+.video-control {
+  font-size: 4em;
+  opacity: 0;
+  transition: opacity 0.3s;
+  color: #333;
+  text-align: center;
+
+  
+  &:hover {
+    opacity: 1;
+  }
+  
+  &:before, &:after {
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    top: 50%;
+    left: 50%;
+    margin: -0.5em 0 0 -0.5em;
+    
+  }
+  
+  &:before {
+    content: '\25BA';
+  }
+  
+  &:after {
+    content: 'll';
+    font-weight: 700;
+  }
+  
+  &.paused {
+    &:after {
+      opacity: 0;
+    }
+  }
+  
+  &.playing {
+    &:before {
+      opacity: 0;
+    }
+  }
+}

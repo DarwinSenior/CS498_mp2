@@ -4,3 +4,36 @@
 @import "variables";
 @import "mixins";
 @import "base";
+@import "slicknav";
+@import "form";
+@import "slick";
+@import "nav";
+@import "video";
+@import "animate";
+@import "movieAni";
+
+
+
+li{
+	list-style: none;
+}
+
+#Examples{
+	.button{
+		background-color: rgba($black, 0.9);
+		&:hover{
+			background-color: rgba($black, 0.8);
+		}
+	}
+}
+#editor{
+	height : 60%;
+	width: 100%;
+}
+
+
+#footer{
+	a{
+		color: $black;
+	}
+}

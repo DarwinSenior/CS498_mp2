@@ -1,0 +1,13 @@
+/* line 2, ../../sass/nav.scss */
+.header a {
+  vertical-align: middle;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease; }
+  /* line 7, ../../sass/nav.scss */
+  .header a:hover, .header a.selected {
+    font-weight: 900;
+    font-size: 100%; }
+/* line 13, ../../sass/nav.scss */
+.header.resized {
+  padding: 20px, 0; }

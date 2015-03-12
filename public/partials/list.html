@@ -1,0 +1,27 @@
+<div>
+	<div class="row">
+		<div class="small-12 columns">
+			<fieldset>
+				<legend>Search For your favourite Movie</legend>
+				<label>Search Term <input type="text" ng-model="searchterm" ng-change="searchChange()"></label>
+				<label>Sort by</label>
+				<input type="radio" ng-model="criteria" value="title" ng-change="searchChange()"><label>Title</label>
+				<input type="radio" ng-model="criteria" value="rank" ng-change="searchChange()"><label>Rank</label>
+				<input type="radio" ng-model="criteria" value="released" ng-change="searchChange()"><label>Date</label>
+			</fieldset>
+		</div>
+	</div>
+	<div class="row animation-fade" ng-repeat="movie in selectedMovies track by $index" ng-animate>
+		<div class="small-6 columns small-centered">
+			<div class="small-4 columns">
+				<a ng-href="#/detail/{{movie.rank}}"><img ng-src="{{imgSource(movie.imdbID)}}"></a>
+			</div>
+			<div class="small-8 columns">
+				<h3>{{movie.title}}</h3>
+				<p>rank: {{movie.rank}}</p>
+				<p>rate: {{movie.rated}}</p>
+				<p>released: {{movie.released}}</p>
+			</div>
+		</div>
+	</div>
+</div>

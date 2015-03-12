@@ -38,7 +38,10 @@ $inline-list-children-display: block !default;
   padding: $inline-list-padding;
   list-style: none;
   overflow: $inline-list-overflow;
-
+  &.center{
+    display: inline-block;
+    margin: auto auto auto auto;
+  }
   & > li {
     list-style: none;
     float: $default-float;

@@ -1,0 +1,16 @@
+.header{
+	a{
+		vertical-align: middle;
+		text-decoration: none;
+		text-transform:uppercase;
+		transition:all.5s ease;
+		&:hover, &.selected{
+			font-weight: 900;
+    		font-size: 100%;
+		}
+
+	}
+	&.resized{
+		padding : 20px, 0;
+	}
+}

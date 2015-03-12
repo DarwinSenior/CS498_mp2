@@ -1,0 +1,73 @@
+/* line 2, ../../sass/movieAni.scss */
+.animation-fade.ng-enter {
+  opacity: 0; }
+  /* line 4, ../../sass/movieAni.scss */
+  .animation-fade.ng-enter.ng-enter-active {
+    opacity: 1; }
+/* line 8, ../../sass/movieAni.scss */
+.animation-fade.ng-leave {
+  opacity: 1; }
+  /* line 10, ../../sass/movieAni.scss */
+  .animation-fade.ng-leave.ng-leave-active {
+    opacity: 0; }
+
+/* line 15, ../../sass/movieAni.scss */
+.animation-slide {
+  -webkit-transition: -webkit-transform .2s ease;
+  transition: transform .2s ease; }
+  /* line 19, ../../sass/movieAni.scss */
+  .animation-slide.ng-enter {
+    z-index: 100000;
+    -webkit-transform: translate3d(100%, 0, 0); }
+    /* line 22, ../../sass/movieAni.scss */
+    .animation-slide.ng-enter.ng-enter-active {
+      -webkit-transform: translate3d(0, 0, 0); }
+  /* line 26, ../../sass/movieAni.scss */
+  .animation-slide.ng-leave {
+    z-index: -100000;
+    -webkit-transform: translate3d(0, 0, 0); }
+    /* line 29, ../../sass/movieAni.scss */
+    .animation-slide.ng-leave.ng-leave-active {
+      -webkit-transform: translate3d(-100%, 0, 0); }
+
+/* line 35, ../../sass/movieAni.scss */
+.animation-slide-contents > * {
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: transform .3s ease; }
+/* line 41, ../../sass/movieAni.scss */
+.animation-slide-contents.ng-enter > * {
+  z-index: 100000;
+  -webkit-transform: translate3d(100%, 0, 0); }
+/* line 46, ../../sass/movieAni.scss */
+.animation-slide-contents.ng-enter.ng-enter-active > * {
+  -webkit-transform: translate3d(0, 0, 0); }
+/* line 52, ../../sass/movieAni.scss */
+.animation-slide-contents.ng-leave > * {
+  z-index: -100000;
+  -webkit-transform: translate3d(0, 0, 0); }
+/* line 57, ../../sass/movieAni.scss */
+.animation-slide-contents.ng-leave.ng-leave-active > * {
+  -webkit-transform: translate3d(-100%, 0, 0); }
+
+/* line 64, ../../sass/movieAni.scss */
+.view-frame.ng-enter, .view-frame.ng-leave {
+  top: 0;
+  left: 0;
+  right: 0; }
+
+/* line 70, ../../sass/movieAni.scss */
+.view-frame.ng-enter {
+  -webkit-animation: 0.5s fade-in;
+  -moz-animation: 0.5s fade-in;
+  -o-animation: 0.5s fade-in;
+  animation: 0.5s fade-in;
+  z-index: 100; }
+
+/* line 78, ../../sass/movieAni.scss */
+.view-frame.ng-leave {
+  -webkit-animation: 0.5s fade-out;
+  -moz-animation: 0.5s fade-out;
+  -o-animation: 0.5s fade-out;
+  animation: 0.5s fade-out;
+  z-index: 99; }

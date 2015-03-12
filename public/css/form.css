@@ -1,0 +1,129 @@
+@import url("http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather");
+@import url("http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css");
+/* line 5, ../../sass/_base.scss */
+h1 {
+  font-size: 2.2rem;
+  color: #ef7e60; }
+
+/* line 10, ../../sass/_base.scss */
+.test {
+  font-size: 1.2rem;
+  color: #2DB6CF; }
+
+/* line 15, ../../sass/_base.scss */
+.shadow, .form {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1), 3px 3px 5px rgba(0, 0, 0, 0.1); }
+
+/* line 19, ../../sass/_base.scss */
+.hr {
+  border: 0;
+  height: 3px;
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+  background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+  background-image: -ms-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0)); }
+
+/* line 5, ../../sass/form.scss */
+#icon {
+  display: inline-block;
+  width: 30px;
+  background-color: #3a57af;
+  padding: 8px 0px 8px 15px;
+  margin-left: 15px;
+  -webkit-border-radius: 4px 0px 0px 4px;
+  -moz-border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0px 0px 4px;
+  color: white;
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.09);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.09);
+  border: solid 0px #cbc9c9; }
+
+/* line 20, ../../sass/form.scss */
+input[type=text], input[type=password] {
+  width: auto;
+  height: 39px;
+  -webkit-border-radius: 0px 4px 4px 0px/5px 5px 4px 4px;
+  -moz-border-radius: 0px 4px 4px 0px/0px 0px 4px 4px;
+  border-radius: 0px 4px 4px 0px/5px 5px 4px 4px;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.09);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.09);
+  border: solid 1px #cbc9c9;
+  margin-left: -5px;
+  margin-top: 13px;
+  padding-left: 10px; }
+
+/* line 36, ../../sass/form.scss */
+input[type=password] {
+  margin-bottom: 25px; }
+
+/* line 40, ../../sass/form.scss */
+#signup input {
+  border-color: #CF2A0E; }
+
+/* line 44, ../../sass/form.scss */
+.form {
+  border-radius: 4px;
+  background-color: #0a0a0a;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  padding: 20px; }
+  /* line 51, ../../sass/form.scss */
+  .form .tag-group div {
+    transition: .5s ease;
+    text-align: center; }
+    /* line 54, ../../sass/form.scss */
+    .form .tag-group div a {
+      font-size: 20px;
+      color: #ffffff; }
+  /* line 60, ../../sass/form.scss */
+  .form .tag-content {
+    display: block; }
+    /* line 62, ../../sass/form.scss */
+    .form .tag-content h1 {
+      display: block;
+      text-align: center;
+      font-family: 'Alegreya Sans SC', sans-serif;
+      font-width: 300;
+      color: #ffffff;
+      margin: 20px, 0; }
+    /* line 70, ../../sass/form.scss */
+    .form .tag-content .field-wrap {
+      position: relative;
+      margin-bottom: 40px; }
+      /* line 73, ../../sass/form.scss */
+      .form .tag-content .field-wrap input {
+        font-size: 18px;
+        background: none;
+        background-image: none;
+        border: 1px solid #4A88D9;
+        color: #ffffff;
+        border-radius: 0;
+        transition: border-color .25s ease, box-shadow .25s ease; }
+        /* line 81, ../../sass/form.scss */
+        .form .tag-content .field-wrap input:focus {
+          outline: 0;
+          border-color: #ffffff; }
+    /* line 87, ../../sass/form.scss */
+    .form .tag-content label {
+      font-family: 'Titillium Web', sans-serif;
+      position: absolute;
+      -webkit-transform: translateY(6px);
+      -moz-transform: translateY(6px);
+      -ms-transform: translateY(6px);
+      transform: translateY(6px);
+      left: 13px;
+      color: rgba(255, 255, 255, 0.5);
+      transition: all 0.25s ease;
+      -webkit-backface-visibility: hidden;
+      pointer-events: none;
+      font-size: 22px; }
+    /* line 101, ../../sass/form.scss */
+    .form .tag-content label.active {
+      transform: translateY(50px);
+      -webkit-transform: translateY(50px);
+      -moz-transform: translateY(50px);
+      -ms-transform: translateY(50px);
+      left: 2px;
+      font-size: 14px; }

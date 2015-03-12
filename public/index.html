@@ -2,58 +2,182 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>MP2 Starter</title>
   <script src="./lib/angular/angular.min.js"></script>
-  <script src="./js/controllers.js"></script>
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./foundation/css/foundation.css">
-  
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.1/jquery.slicknav.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick-theme.css"/>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+  <script src="./lib/ace-builds/src/ace.js" type="text/javascript" charset="utf-8"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
+  <script src="./js/script.js"></script>
 </head>
 
 
 <body>
-
-	<nav class="top-bar" data-topbar role="navigation">
-	  <ul class="title-area">
-	    <li class="name">
-	      <h1><a href="#">MP2</a></h1>
-	    </li>
-	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-	    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-	  </ul>
-
-	  <section class="top-bar-section">
-	    <!-- Left Nav Section -->
-	    <ul class="left">
-	      <li><a href="https://courses.engr.illinois.edu/cs498rk1/index.html">CS498RK</a></li>
-	    </ul>
-	  </section>
-	</nav>
-
-	<div class="row" ng-app = "demoApp">
-		<div class="panel small-centered columns small-12 medium-4">
-    	<input id="nameInput" ng-model="name" placeholder="Your Name" autofocus>
-	
-		<h3>Hello, {{name}}</h3>
-
-		</div>
+	<ul id="menu" style="display:none">
+		<li><a href="#Introduction">Introduction</a></li>
+		<li><a href="#Video">Pictures</a></li>
+		<li><a href="#Examples">Result!!!</a></li>
+		<li><a href="#RegistrationLogin">Sign Up</a></li>
+	</ul>
+	<div class="contain-to-grid header show-for-medium-up">
+		<nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
+		  <ul class="title-area">
+		    <li class="name">
+		      <h1><a href="#">Welcome To MP2</a></h1>
+		    </li>
+		   </ul>
+		  <section class="top-bar-section">
+		    <ul class="right">
+		      <li><a href="#Introduction">Introduction</a></li>
+		      <li><a href="#Video">Pictures</a></li>
+		      <li><a href="#Examples">Result!!!</a></li>
+		      <li><a href="#RegistrationLogin">Sign Up</a></li>
+		    </ul>
+		  </section>
+		</nav>
 	</div>
+	<section id="Introduction">
+		<div class="row">
+			<div>
+				<h1>Welcome TO MP2</h1>
+			</div>
+			<div class="alert columns small-12 large-6">
+				This page is the demostration for MP1. I am not sure what application I am going to achieve in the very end. However, I have a vague idea what it could do. I really like Markdown, and I might want to do an application based on that in the final project. I wish to integrate features including google drive and the biggest feature might be run script alive inside your markdown page. 
+				As you can see that the page is not changing significantly. The cotent remains the same except that it becomes more friendly for the mobile user in the sense that smaller screen could use a better menu bar and if the cotent of editing is not properly measured, it will be blocked out.
+			</div>
+			<div class="columns small-12 large-6 typewriter">
+				So, there are some sections below to demostrate the what I am going to do for the first MP. <br>
+				The first thing is the Videos and Pictures, and it would be the slide show style. It is for demostration perpose. <br>
+				The second thing is the second view is the examples of what I want to achieve might be in the very end. However I realised that a text editor is not very portable to mobile so I deleted it<br>
+				Then, there is the registration section. For future use probably.
+			</div>
+		  	
+		</div>
+	</section>
+	<hr>
+	<section id="Video">
+		<div class="row">
+			<div class="frame columns small-12 large-8 large-centered">
+				<img src="http://owlgraphic.com/owlcarousel/demos/assets/fullimage4.jpg">
+				<img src="http://owlgraphic.com/owlcarousel/demos/assets/fullimage5.jpg">
+				<img src="http://owlgraphic.com/owlcarousel/demos/assets/fullimage6.jpg">
+				<img src="http://owlgraphic.com/owlcarousel/demos/assets/fullimage7.jpg">
+		</div>
+	</section>
+	<hr>
+	<section id="Examples">
+		<div class="row show-for-medium-up">
+			<div class="columns medium-8 medium-centered">
+				<div id="editor" contenteditable="true" class="shadow">
+				<pre id="hehe">
+There are some markdown floating around
+I hope this web page is clear enough.
++ The first introduction is the example of multi-colomn.
++ The second videos and pictures are the slider effect with video tag usage.
++ This editable colomn gives us some ways of modal.
+				</pre>
+				</div>
+			</div>
+			<div class="columns medium-5 medium-centered">
+				<a class="button black expand" data-reveal-id="destop-modal">Reveal Your result</a>
+			</div>
+		</div>
+		<div class="row show-for-small-only">
+			<div class="columns small-6 small-centered">
+				<h4>Sorry, but this function is destop only :P</h4>
+				<a href="#" class="button black" style="width: 100%" data-reveal-id="mobile-modal">But you can see this little video instead</a>
+			</div>
+		</div>
+		<div id="destop-modal" class="reveal-modal large" data-reveal>
+			<div class="row">
+				<div class="columns large-centered large-8">
+					<div id="markdown-html"></div>
+				</div>
+				<a class="close-reveal-modal">&#215;</a>
+			</div>
+		</div>
+		<div id="mobile-modal" class="reveal-modal" data-reveal>
+			<div class="row">
+				<div class="columns small-10 small-center">
+					<img src="http://media.tumblr.com/0000d678e63697591b6892cacd9d8f87/tumblr_inline_mf7n9rKryI1qcn3a6.gif">
+					
+				</div>
+			</div>
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
+	</section>
+	<hr>
+    <section id="RegistrationLogin">
+	    <div class="row">
+	    	<div class="columns small-12 medium-10 large-8 large-centered medium-centered">
+				<div class="form row">
+					<div class="tag-group columns small-10 small-centered large-centered" id="tab-rl">
+						<div class="row">
+							<div class="columns small-6">
+								<a href="#signup" class="button alert expand beef">SIGN UP</a>
+							</div>
+							<div class="columns small-6">
+								<a href="#login" class="button expand beef">LOGIN</a>
+							</div>
+						</div>
+					</div>
+					<div class="tag-content row">
+						<div id="signup" class="columns small-10 small-centered">
+							<h1>Sign Up For Free</h1>
+							<div class="field-wrap">
+								<label><i class="fa fa-envelope-o"></i> Email Adress</label>
+								<input type="text">
+							</div>
+							<div class="field-wrap">
+								<label><i class="fa fa-user"></i> UserName</label>
+								<input type="text">
+							</div>
+							<div class="field-wrap">
+								<label><i class="fa fa-lock"></i> Password</label>
+								<input type="password">
+							</div>
+							<div class="button alert expand beef">Register</div>
+							<hr>
+							<div class="button alert expand beef">Sign in with <i class="fa fa-google-plus"></i></div>
+							<div class="button alert expand beef">Sign in with <i class="fa fa-github"></i></div>
+						</div>
+						<div id="login" class="columns small-10 small-centered large-centered">
+							<h1>Welcome Back!</h1>
+							<div class="field-wrap">
+								<label><i class="fa fa-user"></i> UserName</label>
+								<input type="text">
+							</div>
+							<div class="field-wrap">
+								<label><i class="fa fa-lock"></i> Password</label>
+								<input type="password">
+							</div>
+							<div class="button expand beef">Log in</div>
+						</div>
+					</div>
+		    	</div>
+			</div>
+	</div>
+	</section>
+	<hr>
+	<div id="footer">
 	<div class="row">
-		<div class="alert columns small-12 large-6">
-			<div><img src="http://lorempixel.com/400/200/cats" /></div>
-
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit velit temporibus, fugit recusandae aliquid officiis molestias possimus reprehenderit quos. Facere dolores, nulla optio recusandae. Voluptatibus aut esse nulla saepe sit ut amet, neque officia officiis quam ea ex adipisci, quaerat, eligendi veniam iste temporibus. Aperiam ea quos fugiat provident, voluptatum reiciendis mollitia voluptates, odio quam at, deserunt animi voluptas odit aliquid saepe voluptate distinctio excepturi. Deserunt, id esse fuga cum accusantium eos obcaecati odit veritatis molestias illum sequi repellat, quisquam quasi architecto velit blanditiis perferendis, nulla eligendi non laboriosam. Eligendi sint, voluptatem ipsam dolore eum temporibus dicta, quaerat ea molestias placeat, asperiores minima sit explicabo! Repellat qui ducimus ipsum. Dignissimos at, aliquid vitae asperiores omnis provident voluptatibus, itaque delectus. Porro corrupti vel culpa, delectus in doloremque nam ratione aliquid ullam non iusto magnam, repudiandae, magni a quasi voluptatum inventore exercitationem quibusdam sint autem totam ex quia possimus. Similique ad fugiat eligendi magnam ab, ex nulla unde eos, tempora quis consequatur maxime inventore perferendis voluptatem non nam dignissimos voluptatum dolor quasi quidem molestias maiores doloribus. Omnis ipsa fugit amet! Eum repellat deleniti fuga omnis in maiores rem iusto, qui quasi ipsum illum odit laudantium molestiae, nostrum ipsam fugit animi atque! Non.
+		<div class="columns small-8 large-4 medium-6 small-centered">
+			<ul class="inline-list center">
+				<li><a href="#footer"><i class="fa fa-github fa-2x"></i></a></li>
+				<li><a href="#footer"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+				<li><a href="#footer"><i class="fa fa-google-plus fa-2x"></i></a></li>
+				<li><a href="#footer"><i class="fa fa-twitter fa-2x"></i></a></li>
+			</ul>
 		</div>
-		<div class="columns small-12 large-6">
-	  	<div><img src="http://lorempixel.com/400/200/nature" />	</div>
-	  	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nobis facere sint placeat necessitatibus reprehenderit amet quas minima beatae illo nemo labore, maxime adipisci, accusamus voluptates repudiandae quia, ut excepturi ea quis obcaecati molestias error architecto unde? Hic vel facere porro magnam ipsam omnis eos ducimus, architecto velit beatae modi natus sunt suscipit quo optio qui repellat, blanditiis consequuntur. Fuga omnis porro quis inventore in voluptatum veritatis illum beatae rem. Labore nam saepe cupiditate quod, itaque quidem libero, quas tempore incidunt, quos earum repudiandae recusandae quia voluptas ducimus inventore, expedita. Alias minima, commodi aut, aspernatur laborum quae mollitia pariatur suscipit ad accusamus a ipsam fuga necessitatibus voluptas esse error reprehenderit provident. Sequi architecto ipsum qui enim labore sunt incidunt ullam pariatur. Minus porro error ipsa perferendis exercitationem debitis dicta asperiores nostrum cum voluptas qui dolores odit numquam incidunt cumque eos nemo architecto repudiandae adipisci, eius ut, aut suscipit minima perspiciatis consectetur. Ratione quisquam neque voluptatem? Qui, aspernatur iste quaerat iure. Debitis nobis minus animi mollitia libero temporibus perferendis ratione, inventore ullam, eos ut porro, velit quibusdam rerum possimus, ex! Quidem consectetur obcaecati ad veritatis. Velit illum aliquid tenetur, nisi illo quaerat labore nemo id sequi eveniet consequuntur. Voluptate, similique, rem!</div>
 	</div>
- 
-
-
-  <script src="./js/script.js"></script>
-  <script src="./lib/jquery-2.1.3.min/index.js"></script>
+	</div>
   <script src="./foundation/js/foundation.min.js"></script>
   <script src="http://localhost:35729/livereload.js"></script>
 </body>
