@@ -127,3 +127,6 @@ input[type=password] {
       -ms-transform: translateY(50px);
       left: 2px;
       font-size: 14px; }
+    /* line 109, ../../sass/form.scss */
+    .form .tag-content .button {
+      margin: 0; }
